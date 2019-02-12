@@ -604,6 +604,172 @@ var mobileMenu = function mobileMenu() {
 
 /***/ }),
 
+/***/ "./components/postItem.js":
+/*!********************************!*\
+  !*** ./components/postItem.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/fakhar/projects/farhantahirblog/components/postItem.js";
+
+
+var postItem = function postItem(_ref) {
+  var post = _ref.post;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("article", {
+    className: "post post-1",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 2
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
+    className: "entry-header",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 3
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "entry-title",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: post.url,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }, post.title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "entry-meta",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "post-category",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, post.category)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "post-date",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("time", {
+    className: "entry-date",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, post.date))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "post-author",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "/about",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, post.author)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (postItem);
+
+/***/ }),
+
+/***/ "./content/_posts/summary.json":
+/*!*************************************!*\
+  !*** ./content/_posts/summary.json ***!
+  \*************************************/
+/*! exports provided: fileMap, sourceFileArray, default */
+/***/ (function(module) {
+
+module.exports = {"fileMap":{"content/_posts/create-a-markdown-based-blog-with-React.js-Next.js-and-deploy-it-to-github-pages.json":{"title":"Create a markdown based blog with React.js, Next.js and deploy it to github pages","date":"Feb 12, 2019,","author":"Farhan Tahir","category":"javascript","url":"/post/create-a-markdown-based-blog-with-React.js-Next.js-and-deploy-it-to-github-pages","dir":"content/_posts","base":"create-a-markdown-based-blog-with-React.js-Next.js-and-deploy-it-to-github-pages.json","ext":".json","sourceBase":"create-a-markdown-based-blog-with-React.js-Next.js-and-deploy-it-to-github-pages.md","sourceExt":".md"},"content/_posts/understanding-server-side-rendering.json":{"title":"Understanding Server Side Rendering","date":"Feb 12, 2019,","author":"Farhan Tahir","category":"javascript","url":"/post/understanding-server-side-rendering","dir":"content/_posts","base":"understanding-server-side-rendering.json","ext":".json","sourceBase":"understanding-server-side-rendering.md","sourceExt":".md"}},"sourceFileArray":["content/create-a-markdown-based-blog-with-React.js-Next.js-and-deploy-it-to-github-pages.md","content/understanding-server-side-rendering.md"]};
+
+/***/ }),
+
+/***/ "./lib/content.js":
+/*!************************!*\
+  !*** ./lib/content.js ***!
+  \************************/
+/*! exports provided: getPosts, getLatestsPosts */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getPosts", function() { return getPosts; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getLatestsPosts", function() { return getLatestsPosts; });
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _content_posts_summary_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../content/_posts/summary.json */ "./content/_posts/summary.json");
+var _content_posts_summary_json__WEBPACK_IMPORTED_MODULE_1___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../content/_posts/summary.json */ "./content/_posts/summary.json", 1);
+
+
+
+var sortByDate = function sortByDate(a, b) {
+  var aDate = Date.parse(a.date);
+  var bDate = Date.parse(b.date);
+  return bDate > aDate ? 1 : bDate < aDate ? -1 : 0;
+};
+
+function getPosts() {
+  return _content_posts_summary_json__WEBPACK_IMPORTED_MODULE_1__ && _content_posts_summary_json__WEBPACK_IMPORTED_MODULE_1__.fileMap && _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_0___default()(_content_posts_summary_json__WEBPACK_IMPORTED_MODULE_1__.fileMap).filter(function (file) {
+    return file.indexOf('content/_posts') === 0;
+  }).map(function (file) {
+    return _content_posts_summary_json__WEBPACK_IMPORTED_MODULE_1__.fileMap[file];
+  }).sort(sortByDate);
+}
+function getLatestsPosts() {
+  var limit = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 5;
+  return _content_posts_summary_json__WEBPACK_IMPORTED_MODULE_1__ && _content_posts_summary_json__WEBPACK_IMPORTED_MODULE_1__.fileMap && _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_0___default()(_content_posts_summary_json__WEBPACK_IMPORTED_MODULE_1__.fileMap).filter(function (file) {
+    return file.indexOf('content/_posts') === 0;
+  }).map(function (file) {
+    return _content_posts_summary_json__WEBPACK_IMPORTED_MODULE_1__.fileMap[file];
+  }).sort(sortByDate).slice(0, limit);
+}
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/array/from.js":
 /*!*******************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/array/from.js ***!
@@ -700,6 +866,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/define-proper
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/object/get-prototype-of */ "./node_modules/core-js/library/fn/object/get-prototype-of.js");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/keys.js ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/keys */ "./node_modules/core-js/library/fn/object/keys.js");
 
 /***/ }),
 
@@ -1608,6 +1785,19 @@ module.exports = function defineProperty(it, key, desc) {
 
 __webpack_require__(/*! ../../modules/es6.object.get-prototype-of */ "./node_modules/core-js/library/modules/es6.object.get-prototype-of.js");
 module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object.getPrototypeOf;
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/fn/object/keys.js":
+/*!********************************************************!*\
+  !*** ./node_modules/core-js/library/fn/object/keys.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../../modules/es6.object.keys */ "./node_modules/core-js/library/modules/es6.object.keys.js");
+module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object.keys;
 
 
 /***/ }),
@@ -4264,6 +4454,26 @@ var $getPrototypeOf = __webpack_require__(/*! ./_object-gpo */ "./node_modules/c
 __webpack_require__(/*! ./_object-sap */ "./node_modules/core-js/library/modules/_object-sap.js")('getPrototypeOf', function () {
   return function getPrototypeOf(it) {
     return $getPrototypeOf(toObject(it));
+  };
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es6.object.keys.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es6.object.keys.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// 19.1.2.14 Object.keys(O)
+var toObject = __webpack_require__(/*! ./_to-object */ "./node_modules/core-js/library/modules/_to-object.js");
+var $keys = __webpack_require__(/*! ./_object-keys */ "./node_modules/core-js/library/modules/_object-keys.js");
+
+__webpack_require__(/*! ./_object-sap */ "./node_modules/core-js/library/modules/_object-sap.js")('keys', function () {
+  return function keys(it) {
+    return $keys(toObject(it));
   };
 });
 
@@ -11096,400 +11306,57 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
 /* harmony import */ var _components_aside__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/aside */ "./components/aside.js");
+/* harmony import */ var _components_postItem__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/postItem */ "./components/postItem.js");
+/* harmony import */ var _lib_content__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../lib/content */ "./lib/content.js");
 var _jsxFileName = "/Users/fakhar/projects/farhantahirblog/pages/blog.js";
 
 
 
+
+
 /* harmony default export */ __webpack_exports__["default"] = (function () {
+  var posts = Object(_lib_content__WEBPACK_IMPORTED_MODULE_4__["getPosts"])();
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 9
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 10
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 11
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", {
     className: "col-md-9",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("article", {
-    className: "post post-1",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
-    className: "entry-header",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-    className: "entry-title",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "single.html",
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 12
     },
     __self: this
-  }, "Adaptive Vs. Responsive Layouts And Optimal Text Readability")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "entry-meta",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "post-category",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#",
+  }, posts.map(function (post) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_postItem__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      post: post,
+      key: post.url,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 13
+      },
+      __self: this
+    });
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_aside__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15
-    },
-    __self: this
-  }, "JavaScript")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "post-date",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("time", {
-    className: "entry-date",
-    "date-time": "2012-11-09T23:15:57+00:00",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }, "February 2, 2013"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "post-author",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
-  }, "Farhan Tahir"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("article", {
-    className: "post post-2",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
-    className: "entry-header",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-    className: "entry-title",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "single.html",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29
-    },
-    __self: this
-  }, "Adaptive Vs. Responsive Layouts And Optimal Text Readability")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "entry-meta",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "post-category",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32
-    },
-    __self: this
-  }, "Web Design")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "post-date",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("time", {
-    className: "entry-date",
-    "date-time": "2012-11-09T23:15:57+00:00",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34
-    },
-    __self: this
-  }, "February 2, 2013"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "post-author",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37
-    },
-    __self: this
-  }, "Albert Einstein"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 42
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("article", {
-    className: "post post-3",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 43
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
-    className: "entry-header",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-    className: "entry-title",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 45
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "single.html",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 46
-    },
-    __self: this
-  }, "Adaptive Vs. Responsive Layouts And Optimal Text Readability")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "entry-meta",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 48
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "post-category",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 49
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 49
-    },
-    __self: this
-  }, "Web Design")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "post-date",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("time", {
-    className: "entry-date",
-    "date-time": "2012-11-09T23:15:57+00:00",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51
-    },
-    __self: this
-  }, "February 2, 2013"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "post-author",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 54
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 54
-    },
-    __self: this
-  }, "Albert Einstein"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 60
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("article", {
-    className: "post post-4",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 61
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
-    className: "entry-header",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 62
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-    className: "entry-title",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 63
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "single.html",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 64
-    },
-    __self: this
-  }, "Adaptive Vs. Responsive Layouts And Optimal Text Readability")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "entry-meta",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "post-category",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 67
-    },
-    __self: this
-  }, "Web Design")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "post-date",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 69
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 69
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("time", {
-    className: "entry-date",
-    "date-stime": "2012-11-09T23:15:57+00:00",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 69
-    },
-    __self: this
-  }, "February 2, 2013"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "post-author",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 72
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 72
-    },
-    __self: this
-  }, "Albert Einstein")))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_aside__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 79
     },
     __self: this
   }))));
@@ -11497,7 +11364,7 @@ var _jsxFileName = "/Users/fakhar/projects/farhantahirblog/pages/blog.js";
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!*************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fblog&absolutePagePath=%2FUsers%2Ffakhar%2Fprojects%2Ffarhantahirblog%2Fpages%2Fblog.js ***!
   \*************************************************************************************************************************************/
@@ -11520,5 +11387,5 @@ module.exports = dll_228480eb734ad466119d;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]));;
+},[[1,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=blog.js.map
