@@ -4564,7 +4564,7 @@ module.exports = (__webpack_require__(/*! dll-reference dll_228480eb734ad466119d
 
 /***/ }),
 
-/***/ 8:
+/***/ 1:
 /*!**********************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F_error&absolutePagePath=%2FUsers%2Ffakhar%2Fprojects%2Ffarhantahirblog%2Fnode_modules%2Fnext%2Fdist%2Fpages%2F_error.js ***!
   \**********************************************************************************************************************************************************************/
@@ -4587,5 +4587,5 @@ module.exports = dll_228480eb734ad466119d;
 
 /***/ })
 
-},[[8,"static/runtime/webpack.js"]]]));;
+},[[1,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=_error.js.map
