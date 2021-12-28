@@ -1,0 +1,130 @@
+baseURL = "https://farhantahir.github.io"
+title = "Muhammad Farhan Tahir"
+paginate = 5
+theme = "PaperMod"
+enableInlineShortcodes = true
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+enableEmoji = true
+
+[minify]
+disableXML = true
+
+[languages.en]
+languageName = "English"
+weight = 1
+
+[[languages.en.menu.main]]
+name = "Archive"
+url = "archives"
+weight = 5
+
+[[languages.en.menu.main]]
+name = "Search"
+url = "search/"
+weight = 10
+
+[[languages.en.menu.main]]
+name = "Tags"
+url = "tags/"
+weight = 10
+
+[[languages.en.menu.main]]
+name = "Categories"
+url = "categories/"
+weight = 10
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+
+[params]
+env = "production"
+description = "Personal blog of Muhammad Farhan Tahir a full stack developer"
+author = "Muhammad Farhan Tahir"
+defaultTheme = "auto"
+ShowShareButtons = true
+ShowReadingTime = true
+displayFullLangName = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowToc = true
+images = [ "papermod-cover.png" ]
+
+  [params.profileMode]
+  enabled = false
+  title = "PaperMod"
+  imageUrl = "#"
+  imageTitle = "my image"
+
+    [[params.profileMode.buttons]]
+    name = "Archives"
+    url = "archives"
+
+    [[params.profileMode.buttons]]
+    name = "Tags"
+    url = "tags"
+
+  [params.homeInfoParams]
+  Title = "Hi there 👋"
+  Content = """
+  - I'm **Muhammad Farhan Tahir**, a father, CEO, Full Stack Developer, born in Pakistan, graduate in IT, Gold Medalist of my batch. Currently running a web development agency providing consultancy remotely.
+
+  - I have **7 years** of experience as full stack developer.  I have had helped many startups in achieving their goals from 0 to fully functional apps.
+
+  - You can reach out to me using following channels.
+"""
+
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/farhantahir"
+
+  [[params.socialIcons]]
+  name = "twitter"
+  url = "https://twitter.com/farhantahir891"
+
+  [[params.socialIcons]]
+  name = "email"
+  url = "mailto:contact@strategisthub.com"
+
+  [[params.socialIcons]]
+  name = "linkedIn"
+  url = "https://www.linkedin.com/in/mfarhantahir/"
+
+  [params.editPost]
+  URL = "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
+  Text = "Suggest Changes"
+  appendFilePath = true
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[privacy.vimeo]
+disabled = false
+simple = true
+
+[privacy.twitter]
+disabled = false
+enableDNT = true
+simple = true
+
+[privacy.instagram]
+disabled = false
+simple = true
+
+[privacy.youtube]
+disabled = false
+privacyEnhanced = true
+
+[services.instagram]
+disableInlineCSS = true
+
+[services.twitter]
+disableInlineCSS = true
