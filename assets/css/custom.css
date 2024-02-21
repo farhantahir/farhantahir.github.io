@@ -1,0 +1,107 @@
+/**
+ * CUSTOM CSS
+ *
+ * Here you can add your custom CSS code.
+ */
+
+/*# sourceMappingURL=custom.css.map */
+.btn.btn-download {
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid #e0a80d;
+    padding: 5px 15px;
+    height: 36px;
+    width: 160px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 5px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5) !important;
+}
+.btn.btn-download:focus, .btn.btn-download:hover {
+    color: #e0a80d;
+    font-weight: bold;
+}
+@media print and (color) {
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  @page {
+    size: 100%;
+    margin: 0pt;
+  }
+  body {
+    font-size: 12pt;
+  }
+  .c-intro p {
+    font-size: 12pt;
+  }
+  p, h3, h4, h5 {
+    font-size: 10pt;
+  }
+  .o-section__header.c-header__header,
+  .t-section__header {
+    //background: #282929;
+    background: #fff;
+    border: none;
+  }
+  .t-section__content {
+    //background: #2d2e2e;
+    background: #fff;
+  }
+  .o-section__container {
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .o-container {
+    width: 100%;
+  }
+  .o-section__header {
+    width: 30%;
+  }
+  .o-section__content {
+    width: 70%;
+  }
+  .c-header__brand {
+    text-align: left;
+  }
+  .c-header__social-buttons {
+    position: absolute;
+    bottom: auto;
+    right: 25px;
+    top: 115px;
+  }
+  .btn.btn-download,
+  .c-header__social-buttons,
+  .c-footer__social-buttons {
+    display: none;
+  }
+  .c-header__contact {
+    text-align: left;
+  }
+  .o-grid p,
+  .o-grid h3,
+  .o-section.t-section {
+    page-break-inside: avoid;
+    page-break-before: avoid;
+  }
+  .o-section.o-section--header.t-section {
+    padding-top: 20px;
+  }
+  .o-section.t-section:nth-of-type(4) {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  .o-section.t-section:nth-of-type(6) .o-section__header.t-section__header,
+  .o-section.t-section:nth-of-type(6) .a-education-timeline.c-timeline {
+    padding-top: 70px;
+  }
+  .o-section.t-section:nth-of-type(8) {
+    padding-top: 30px;
+  }
+  .o-section--footer .o-section__content .c-footer__contact-divider {
+    margin-bottom: 20px;
+  }
+}
